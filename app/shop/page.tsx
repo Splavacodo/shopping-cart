@@ -10,10 +10,11 @@ export default async function Shop() {
                 <header>
                     <h1 className="font-semibold text-xl">Shop Products</h1>
                 </header>
-                
-                <Suspense fallback={<LoadingProductList/>}>
+                <LoadingProductList/>
+
+                {/* <Suspense fallback={<LoadingProductList/>}>
                     <ProductList/>
-                </Suspense>
+                </Suspense> */}
                 
             </section>
         </main>
