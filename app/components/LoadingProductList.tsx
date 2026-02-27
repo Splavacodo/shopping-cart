@@ -1,7 +1,7 @@
 export default function LoadingProductList() {
     return (
         <div className="grid gap-8 [grid-template-columns:repeat(auto-fill,minmax(300px,1fr))]">
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -11,7 +11,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -21,7 +21,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -31,7 +31,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -41,7 +41,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -51,7 +51,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -61,7 +61,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
 
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
@@ -71,7 +71,7 @@ export default function LoadingProductList() {
                 </div>
             </div>
             
-            <div className="flex flex-col w-[300px] h-[400px] border-1 border-foreground rounded-lg">
+            <div className="flex flex-col w-[300px] h-[400px] border-1 border-zinc-700 rounded-lg">
                 <div className="h-3/4 rounded-lg bg-zinc-700 m-2 animate-pulse"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-150"></div>
                 <div className="h-1/16 rounded-sm bg-zinc-700 m-2 animate-pulse anim-delay-300"></div>
