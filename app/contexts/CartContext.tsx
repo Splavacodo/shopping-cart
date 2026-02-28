@@ -11,7 +11,7 @@ interface Product {
 
 interface CartContextType {
     cart: Array<Product>,
-    addItem: (product: Product, productQty: number) => void,
+    addItem: (product: Product) => void,
     removeItem: (id: string) => void,
 }
 
@@ -20,14 +20,14 @@ const CartContext = createContext<CartContextType | null>(null);
 export function CartProvider({ children }: { children: React.ReactNode}) {
     const [cart, setCart] = useState<Array<Product>>([]); 
 
-    function addItem(product: Product, productQty: number) {
+    function addItem(product: Product) {
         setCart(prevCart => {
             const matchingProduct = prevCart.find(cartProduct => cartProduct.id === product.id);
 
             if (matchingProduct)
-                return prevCart.map(cartProduct => cartProduct.id === product.id ? { ...cartProduct, quantity: cartProduct.quantity + productQty } : cartProduct);
+                return prevCart.map(cartProduct => cartProduct.id === product.id ? { ...cartProduct, quantity: cartProduct.quantity + product.quantity } : cartProduct);
 
-            return [...prevCart, {...product, quantity: productQty }];
+            return [...prevCart, {...product}];
         });
     }
 
