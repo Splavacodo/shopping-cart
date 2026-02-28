@@ -5,7 +5,7 @@ import { createContext, useContext, useState } from "react";
 interface Product {
     id: string,
     title: string,
-    price: string,
+    price: number,
     quantity: number
 }
 
