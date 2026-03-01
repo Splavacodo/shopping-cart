@@ -6,6 +6,7 @@ interface Product {
     id: string,
     title: string,
     price: number,
+    imgURL: string,
     quantity: number
 }
 

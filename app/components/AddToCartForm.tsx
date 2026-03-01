@@ -2,7 +2,7 @@
 
 import { useCart } from "../contexts/CartContext";
 
-export default function AddToCartForm({ productId, productTitle, productPrice }: { productId: string, productTitle: string, productPrice: number}) {
+export default function AddToCartForm({ productId, productTitle, productPrice, productImgURL }: { productId: string, productTitle: string, productPrice: number, productImgURL: string}) {
     const { addItem } = useCart();
 
     function handleAddToCart(event: React.SubmitEvent<HTMLFormElement>) {
@@ -18,6 +18,7 @@ export default function AddToCartForm({ productId, productTitle, productPrice }:
             id: productId,
             title: productTitle,
             price: productPrice,
+            imgURL: productImgURL,
             quantity: qty
         });
     }

@@ -18,6 +18,7 @@ export default function ProductCard({ productId, productImgURL, productTitle, pr
             <AddToCartForm
                 productId={productId}
                 productTitle={productTitle}
+                productImgURL={productImgURL}
                 productPrice={Number(productPrice)}
             />
         </div>
