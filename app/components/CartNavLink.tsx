@@ -16,7 +16,7 @@ export default function CartNavLink() {
                 alt="shopping cart icon"
                 width={20}
                 height={20}/>
-            {`Cart (${cart.length})`}
+            {`Cart (${cart.reduce((totalItems, product) => totalItems + product.quantity, 0)})`}
         </Link>
     );
 }
