@@ -25,7 +25,7 @@ export default function AddToCartForm({ productId, productTitle, productPrice }:
     return (
         <form className="flex justify-center items-center gap-4">
             <label htmlFor="prod-qty" className="text-sm">Qty:</label>
-            <input id="prod-qty" name="prod-qty" min={1} max={5} type="number" className="rounded-sm text-sm border border-zinc-700 p-1"></input>
+            <input id="prod-qty" name="prod-qty" min={1} max={5} type="number" placeholder="1" className="rounded-sm text-sm border border-zinc-700 p-1"></input>
             <button onClick={handleAddToCart} className="rounded-sm bg-foreground text-background py-2 px-4 hover:cursor-pointer">Add to cart</button>
         </form>
     );
