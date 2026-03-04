@@ -3,6 +3,7 @@
 import Image from "next/image";
 
 import { useCart } from "../contexts/CartContext";
+import CartProducts from "../components/CartProducts";
 
 export default function Cart() {
     const { cart } = useCart();
@@ -14,7 +15,7 @@ export default function Cart() {
                     <h1 className="font-semibold text-xl">{`Cart (${cart.reduce((totalItems, product) => totalItems + product.quantity, 0)})`}</h1>
                 </header>
 
-                <ul className="flex flex-col gap-24">
+                <CartProducts>
                     {
                         cart.map(product => 
                             <li key={product.id} className="list-none flex gap-4 h-48">
@@ -48,7 +49,7 @@ export default function Cart() {
                             </li>
                         )
                     }
-                </ul>
+                </CartProducts>
             </section>
         </main>
     )
