@@ -11,7 +11,7 @@ interface Product {
 export default function CartCard({ product, removeProductHandler, updateProductHandler }: 
     {
         product: Product, 
-        removeProductHandler: () => void 
+        removeProductHandler: (id: string) => void 
         updateProductHandler: (prodQty: number) => void
     }
 ) {
@@ -33,7 +33,7 @@ export default function CartCard({ product, removeProductHandler, updateProductH
                     <div className="font-semibold">{`Subtotal: $${product.price * product.quantity}`}</div>
                 </div>
 
-                <button className="flex items-center gap-2 mb-auto hover:cursor-pointer text-accent">
+                <button className="flex items-center gap-2 mb-auto hover:cursor-pointer text-accent" onClick={() => removeProductHandler(product.id)}>
                     <Image
                         src={"/trash-can-outline.svg"}
                         alt={"trash outline icon"}
