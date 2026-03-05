@@ -12,7 +12,7 @@ export default function CartCard({ product, removeProductHandler, updateProductH
     {
         product: Product, 
         removeProductHandler: (id: string) => void 
-        updateProductHandler: (prodQty: number) => void
+        updateProductHandler: (id: string, prodQty: number) => void
     }
 ) {
     return (
@@ -29,7 +29,16 @@ export default function CartCard({ product, removeProductHandler, updateProductH
                 <div className="flex flex-col gap-4">
                     <div>{product.title}</div>
                     <div>{`Price: $${product.price}`}</div>
-                    <input type="number" name="prod-qty" id="prod-qty" className="rounded-sm text-sm border border-zinc-700 p-2 mb-auto w-20" value={product.quantity}/>
+                    <input 
+                        type="number" 
+                        name="prod-qty" 
+                        id="prod-qty" 
+                        className="rounded-sm text-sm border border-zinc-700 p-2 mb-auto w-20" 
+                        value={product.quantity} 
+                        onChange={(event) => updateProductHandler(product.id, Number(event.target.value))}
+                        min={"0"}
+                        max={"5"}
+                    />
                     <div className="font-semibold">{`Subtotal: $${product.price * product.quantity}`}</div>
                 </div>
 

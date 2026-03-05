@@ -7,7 +7,7 @@ import CartProducts from "../components/CartProducts";
 import CartCard from "../components/CartCard";
 
 export default function Cart() {
-    const { cart, removeItem } = useCart();
+    const { cart, removeItem, updateItemQty} = useCart();
 
     return (
         <main className="flex-1 flex flex-col font-sans items-center py-8">
@@ -23,7 +23,7 @@ export default function Cart() {
                                 key={product.id}
                                 product={product}
                                 removeProductHandler={removeItem}
-                                updateProductHandler={() => {}}
+                                updateProductHandler={updateItemQty}
                             />
                         )
                     }
